@@ -316,6 +316,9 @@ class RegisterFormState extends State<RegisterForm> {
                           model.password = value;
                         },
                       ),
+                      SizedBox(
+                        height: 50,
+                      ),
                       FlutterPwValidator(
                           width: 400,
                           height: 150,
@@ -327,7 +330,6 @@ class RegisterFormState extends State<RegisterForm> {
                             setState(() {});
                           },
                           controller: originalPassword),
-
                       SizedBox(
                         height: 20,
                       ),
